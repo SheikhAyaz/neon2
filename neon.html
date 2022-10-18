@@ -1,0 +1,2343 @@
+<!doctype html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="https://neon-crafts.com/mockup/assets/css/index.css?1234">
+
+    <link rel="stylesheet" type="text/css" href="https://neon-crafts.com/mockup/assets/css/utility.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="https://neon-crafts.com/mockup/assets/script/html2canvas.min.js"></script>
+
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+
+    <link rel="shortcut icon" href="https://neon-crafts.com/mockup/assets/images/fav-icon_1.ico">
+
+    <title>Mockup Generator</title>
+
+</head>
+
+
+
+<body>
+
+
+
+    <div id="loader" class="w-100 vh-100 position-absolute d-none" style="z-index: 11;background-color:#ffffff">
+
+        <div class="d-flex justify-content-center align-items-center h-100">
+
+            <div class="text-center">
+
+                <div class="spinner-border text-secondary" role="status">
+
+                    <span class="sr-only">Loading...</span>
+
+                </div>
+
+                <div>Please wait mockups are generating...</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <section id="sectionMain">
+
+        <section class=" mainSection py-1">
+
+            <div class="row m-0 ">
+
+                <div class="col-lg-7 col-md-7 col-sm-12 " id="takeScreenShoot">
+
+                    <section class="bg-white">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="h1 m-0 cl-7e13ae  text-center border-bottom pb-3">Mockup Generator</div>
+
+                            <div>
+
+                                <select class="form-control"  id="selectCurrencyId" onchange="selectCurrency(this)">
+
+                                    <option value="USD" selected dataexchange="1">USD</option>
+
+                                    <option value="CAD" dataexchange="1.32">CAD</option>
+
+                                    <option value="EUR" dataexchange="1">EUR</option>
+
+                                    <option value="GBP" dataexchange="0.87">GBP</option>
+
+                                    <option value="AUD" dataexchange="1.47">AUD</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="titleMain RetroSignature  text-center">o Neon Crafts</div> -->
+
+                        <div class="row m-0" id="mockupRow">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 mb-2 pl-1 pr-1 minHeight mockupMain_1" onclick="activeGrid(this,'1')">
+
+                                <div class="bg-222222 px-2 py-1 rounded addBoarder h-100">
+
+                                    <div class="text-center paddingTop"> <span class="commonMockupText applycolor fontSizeText text-white fontSelection_1 Alexa cl-tube-9-text" data-color_name="Hot-Pink" data-class="Alexa" data-mob="45" data-color="cl-tube-9" data-size="80" data-height="7" data-aspect_ratio="2.59" style="font-size:80px; " data-width="29">Text here</span> </div>
+
+                                    <div class="mockupDivContent">
+
+                                        <div class="d-flex relative-position align-items-end justify-content-between">
+
+                                            <div class="text-white changeFont">Alexa</div>
+
+                                            <div class="d-flex justify-content-end">
+
+                                                <div class="bg-white text-dark  px-2 py-0">
+
+                                                    <div class="d-flex">
+
+                                                        <div class="f-14 dimension_  _ w-47pixels whiteSpace">Width: </div>
+
+                                                        <div class="f-14 dimension_   pl-2 fw-600 setWidth whiteSpace">24 inch</div>
+
+                                                    </div>
+
+                                                    <div class="d-flex pt-0">
+
+                                                        <div class="f-14 dimension_  _ w-47pixels whiteSpace">Height: </div>
+
+                                                        <div class="f-14 dimension_   pl-2 fw-600 setHeight whiteSpace">7 inch</div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="bg-white text-dark ml-2  px-2 py-0">
+
+                                                    <div class="d-flex pt-2">
+
+                                                        <div class="f-14   w-47pixels pricrFontSize">Price: </div>
+
+                                                        <div class="f-14    pl-3 fw-600 pricrFontSize setFinalprice" data-currency="220" id="setFinalpriceOne"><span class="currencySpan">$</span>220</div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 ">
+
+                    <section class="bg-white px-1">
+
+                        <!-- <div class="h1 m-0 cl-7e13ae  text-center border-bottom pb-3">Mockup Generator</div> -->
+
+                        <div class="row m-0 pt-3 align-items-center">
+
+                            <div class="col-lg-5 pl-0 col-md-5 col-sm-6 col-5 rightBarLabel">Text</div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+
+                                <!--<textarea name="" id="one_text_1" rows="1" cols="1"  class="form-control" oninput="textArea(this)">Text here</textarea>-->
+
+                                <textarea class="form-control txt_area_1" id="one_text_1" value="First line" oninput="updateText(this);" data-tab="tab-one" style="resize:none;" placeholder="First line" rows="1" cols="1" maxlength="29">Text here</textarea>
+
+                                <!--<input class="form-control txt_area_1" id="one_text_1"  value="Text here" oninput="updateText(this);" data-tab="tab-one" placeholder="Text here" rows="1" cols="1" maxlength="29">-->
+
+                                <!-- <input value="Text here" type="text"
+
+                                        class="form-control" id="validationDefault03" required> -->
+
+                            </div>
+
+                        </div>
+
+                        <div class="row m-0 pt-2 align-items-center">
+
+                            <div class="col-lg-5 pl-0 col-md-5 col-sm-6 col-5 rightBarLabel">Sign Size</div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+
+                                <div class="d-flex align-items-center">
+
+                                    <button class="bg-dark text-white px-2 border-0 btn btn-dark py-1" onclick="increaseSize()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+
+                                    <button class="bg-dark text-white px-2 border-0 btn btn-dark py-1 ml-2" onclick="decreaseSize()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+
+                                    <div class="ml-5">
+
+                                        <input type="checkbox" id="sizeCheckbox" onchange="activeAll(this)" class="form-control d-inline" style="width: 25px;height:15px">
+
+                                        
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row m-0 pt-2 align-items-center">
+
+                            <div class="col-lg-5 pl-0 col-md-5 col-sm-6 col-5 rightBarLabel">Profit Factor</div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+
+                                <input type="number" class="form-control w-25 text-center p-0" id="validationDefault03" value="2.0" onchange="changeProfit()" oninput="changeProfit()" required>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="robotoMedium pb-1 f-18">Select Your Font.</div>
+
+                            <input type="hidden" id="checkWhichone" value="1"> </div>
+
+                        <div class="p-1 p-sm-2 p-md-2 p-lg-2 box-shadow-font">
+
+                            <div class="row pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Alexa font-div d-flex js-btn-tooltip bgBlackClWhite" data-desk="80" data-mob="45" data-height="6" fontselection="1" data-aspect_ratio="2.59" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Alexa" onclick="getClass(this,8);" data-original-title="Alexa"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">1</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Bayshore font-div d-flex js-btn-tooltip text-dark" data-desk="105" data-mob="62" data-height="9" fontselection="2" data-aspect_ratio="3.505" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Bayshore" onclick="getClass(this,8);" data-original-title="Bayshore"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">2</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Dancer font-div d-flex js-btn-tooltip text-dark" data-desk="80" data-mob="38" data-height="6" fontselection="3" data-aspect_ratio="2.779" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Dancer" onclick="getClass(this,8);" data-original-title="Dancer"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">3</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Gruenewald font-div d-flex js-btn-tooltip text-dark" data-desk="100" data-mob="65" data-height="6" fontselection="4" data-aspect_ratio="2.683" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Gruenewald" onclick="getClass(this,8);" data-original-title="Gruenewald"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">4</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded NewCursive font-div d-flex js-btn-tooltip text-dark" data-desk="100" data-mob="46" data-height="6" fontselection="5" data-aspect_ratio="2.979" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="NewCursive" onclick="getClass(this,8);" data-original-title="New cursive"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">5</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Barcelony font-div d-flex js-btn-tooltip text-dark" data-desk="70" data-mob="35" data-height="10" fontselection="6" data-aspect_ratio="3.906" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Barcelony" onclick="getClass(this,8);" data-original-title="Barcelony"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">6</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Vintage font-div d-flex js-btn-tooltip text-dark" data-desk="75" data-mob="45" data-height="7" fontselection="7" data-aspect_ratio="3.028" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Vintage" onclick="getClass(this,8);" data-original-title="Vintage"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">7</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn bg-f1eded py-1 py-sm-1 py-md-2 py-lg-2 border rounded Amanda font-div d-flex js-btn-tooltip text-dark" data-desk="85" data-mob="47" data-height="9" fontselection="8" data-aspect_ratio="3.384" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Amanda" onclick="getClass(this,8);" data-original-title="Amanda"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">8</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Budhayan font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="47" data-mob="22" data-height="9" data-aspect_ratio="3.443" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Budhayan" onclick="getClass(this,8);" data-original-title="Budhayan" fontselection="9"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">9</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Sebastian font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="110" data-mob="70" data-height="10" data-aspect_ratio="3.828" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Sebastian" onclick="getClass(this,8);" data-original-title="Sebastian" fontselection="10"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">10</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Signature font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="100" data-mob="65" data-height="9" data-aspect_ratio="3.230" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Signature" onclick="getClass(this,8);" data-original-title="Signature" fontselection="11"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">11</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Assalwa font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="115" data-mob="71" data-height="8" data-aspect_ratio="3.454" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Assalwa" onclick="getClass(this,8);" data-original-title="Assalwa" fontselection="12"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">12</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Hamilton font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="100" data-mob="62" data-height="9" data-aspect_ratio="4.520" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Hamilton" onclick="getClass(this,8);" data-original-title="Hamilton" fontselection="13"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">13</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Hesterica font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="90" data-mob="52" data-height="8" data-aspect_ratio="4.131" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Hesterica" onclick="getClass(this,8);" data-original-title="Hesterica" fontselection="14"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">14</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded LoveNote font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="70" data-mob="36" data-height="6" data-aspect_ratio="2.681" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="LoveNote" onclick="getClass(this,8);" data-original-title="Love note" fontselection="15"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">15</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Northwell font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="93" data-mob="56" data-height="9" data-aspect_ratio="4.871" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Northwell" onclick="getClass(this,8);" data-original-title="North well" fontselection="16"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">16</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Quinzey font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="73" data-mob="37" data-height="7" data-aspect_ratio="3.181" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Quinzey" onclick="getClass(this,8);" data-original-title="Quinzey" fontselection="17"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">17</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded RedVelvet font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="68" data-mob="30" data-height="9" data-aspect_ratio="3.052" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="RedVelvet" onclick="getClass(this,8);" data-original-title="Red velvet" fontselection="18"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">18</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Rocket font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="50" data-mob="20" data-height="6" data-aspect_ratio="2.616" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Rocket" onclick="getClass(this,8);" data-original-title="Rocket" fontselection="19"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">19</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded WildScript font-div d-flex js-btn-tooltip activeFont bg-f1eded text-dark" data-desk="115" data-mob="70" data-height="10" data-aspect_ratio="4.840" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="WildScript" onclick="getClass(this,8);" data-original-title="Wild Script" fontselection="20"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">20</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded AvantGrade font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="75" data-mob="35" data-height="5" data-aspect_ratio="2.381" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="AvantGrade" onclick="getClass(this,8);" data-original-title="Avant grade" fontselection="21"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">21</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Bauhaus font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="65" data-mob="44" data-height="5" data-aspect_ratio="2.247" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Bauhaus" onclick="getClass(this,8);" data-original-title="Bauhaus" fontselection="22"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">22</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded DOLCEVITA font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="70" data-mob="30" data-height="4" data-aspect_ratio="2.205" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="DOLCEVITA" onclick="getClass(this,8);" data-original-title="DOLCEVITA" fontselection="23"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">23</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded KIONA font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="65" data-mob="17" data-height="5" data-aspect_ratio="1.835" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="KIONA" onclick="getClass(this,8);" data-original-title="Kiona" fontselection="24"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">24</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded NixieOne font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="65" data-mob="30" data-height="5" data-aspect_ratio="2.112" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="NixieOne" onclick="getClass(this,8);" data-original-title="Nixie one" fontselection="25"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">25</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Typewriter font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="70" data-mob="21" data-height="5" data-aspect_ratio="2.017" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Typewriter" onclick="getClass(this,8);" data-original-title="Typewriter" fontselection="26"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">26</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded PaperDaisy font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="120" data-mob="59" data-height="6" data-aspect_ratio="4.317" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="PaperDaisy" onclick="getClass(this,8);" data-original-title="Paper daisy" fontselection="27"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">27</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Roboto font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="70" data-mob="35" data-height="5" data-aspect_ratio="2.500" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Roboto" onclick="getClass(this,8);" data-original-title="Roboto" fontselection="28"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">28</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded BRAVE font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="73" data-mob="33" data-height="5" data-aspect_ratio="2.609" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="BRAVE" onclick="getClass(this,8);" data-original-title="Brave" fontselection="29"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">29</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded LOVELO font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="60" data-mob="28" data-height="6" data-aspect_ratio="1.623" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="LOVELO" onclick="getClass(this,8);" data-original-title="Lovelo" fontselection="30"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">30</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Marquee font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="85" data-mob="40" data-height="6" data-aspect_ratio="2.811" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Marquee" onclick="getClass(this,8);" data-original-title="Marquee" fontselection="31"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">31</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded NeonGlow font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="75" data-mob="40" data-height="8" data-aspect_ratio="2.556" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="NeonGlow" onclick="getClass(this,8);" data-original-title="Neon glow" fontselection="32"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">32</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded NeonLite font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="62" data-mob="30" data-height="6" data-aspect_ratio="1.992" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="NeonLite" onclick="getClass(this,8);" data-original-title="Neon lite" fontselection="33"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">33</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded NEONTUBE font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="62" data-mob="25" data-height="6" data-aspect_ratio="1.773" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="NEONTUBE" onclick="getClass(this,8);" data-original-title="Neontube" fontselection="34"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">34</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded Outline font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="65" data-mob="55" data-height="8" data-aspect_ratio="2.212" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="Outline" onclick="getClass(this,8);" data-original-title="Outline" fontselection="34"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">35</span><span>Text here</span></div>
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center pl-1 pr-1">
+
+                                    <div class="font-btn commonFontBtn py-1 py-sm-1 py-md-2 py-lg-2 border rounded SciFi font-div d-flex js-btn-tooltip bg-f1eded text-dark" data-desk="48" data-mob="18" data-height="6" data-aspect_ratio="1.468" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip-primary" title="" data-class="SciFi" onclick="getClass(this,8);" data-original-title="Scifi" fontselection="36"><span style="font-family:Arial !important;" class="top-tabs pl-1 pr-3">36</span><span>Text here</span></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="w-100 mr-1 mr-sm-2 mr-md-3 mr-lg-3">
+
+                            <div class="robotoMedium pt-2 pt-sm-2 pt-md-2 pt-lg-2 pb-1 f-18">Colors</div>
+
+
+
+                            <input type="hidden" id="checkWhichColor" data-color-active="cl-tube-9" data-color-name="Hot-Pink">
+
+
+
+                            <div class="d-flex px-1 px-sm-2 px-md-3 px-lg-3 justify-content-between">
+
+                                <div class="color-selection clr-tube cl-tube-12 fa fa-lightbulb-o" data-class="cl-tube-12" data-name="Warm-White" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-13 fa fa-lightbulb-o" data-class="cl-tube-13" data-name="Cold-White" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-1 fa fa-lightbulb-o" data-class="cl-tube-1" data-name="Light-Yellow" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-2 fa fa-lightbulb-o" data-class="cl-tube-2" data-name="Yellow" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-3 fa fa-lightbulb-o" data-class="cl-tube-3" data-name="Orange" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-4 fa fa-lightbulb-o" data-class="cl-tube-4" data-name="Dark-Blue" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-5 fa fa-lightbulb-o" data-class="cl-tube-5" data-name="Sky-Blue" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-6 fa fa-lightbulb-o" data-class="cl-tube-6" data-name="Ice-Blue" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-7 fa fa-lightbulb-o" data-class="cl-tube-7" data-name="Green" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-8 fa fa-lightbulb-o" data-class="cl-tube-8" data-name="Light-Pink" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-9-on fa fa-lightbulb-o" data-class="cl-tube-9" data-name="Hot-Pink" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-10 fa fa-lightbulb-o" data-class="cl-tube-10" data-name="Red" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-11 fa fa-lightbulb-o" data-class="cl-tube-11" data-name="Purple" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                                <div class="color-selection clr-tube cl-tube-14 fa fa-lightbulb-o" data-class="cl-tube-14" data-name="Teal" onclick="changeclass(this)" aria-hidden="true"></div>
+
+                            </div>
+
+                            <div class="pt-2 text-center" id="links">
+
+                                <button type="button" class="btn btn-purple px-5 py-1 btn-lg" onclick="takeSS(8)">Generate Mockup</button>
+
+                                <button type="button" class="btn btn-purple px-5 py-1 btn-lg ml-3" onclick="allScreenShots()">Get All Mockups</button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+    <script src="https://neon-crafts.com/mockup/assets/plugins/bootstrap/jquery.js"> </script>
+
+    <script src="https://neon-crafts.com/mockup/assets/plugins/bootstrap/bootstrap.min.js"> </script>
+
+<script>
+
+
+
+
+
+function takeSS(e) {
+
+    if($('.bgBlackClWhite').length  <= e){
+
+        if($('#one_text_1').val() != ''){
+
+            html2canvas(document.getElementById("takeScreenShoot"),{scrollY: -window.scrollY}).then(canvas => {
+
+                var dataURL = canvas.toDataURL();
+
+                return Canvas2Image.saveAsPNG(canvas)
+
+            });
+
+        }else{
+
+            alert('Please enter some Text')
+
+        }
+
+    }else{
+
+            alert('Please select only 8 fonts')
+
+    }
+
+}
+
+
+
+
+
+function allScreenShots (e){
+
+    $(e).attr('disabled','true');
+
+    $('#loader').removeClass('d-none');
+
+    $('#sectionMain').css('opacity','0');
+
+    $('#mockupRow').html('')
+
+    $('.font-btn').addClass("commonFontBtn").removeClass("bgBlackClWhite").addClass("bg-f1eded").addClass("text-dark");
+
+    var allBtns = $('.commonFontBtn');
+
+    console.log(allBtns);
+
+    let i = 0;
+
+    for (singleBtn of allBtns) {
+
+        ++i;
+
+        if (i <= 8) {
+
+            $(singleBtn).attr('data-screenshot','one')
+
+        }else if(i > 8 && i <= 16){
+
+            $(singleBtn).attr('data-screenshot','two')
+
+
+
+        }else if(i > 16 && i <= 24){
+
+            $(singleBtn).attr('data-screenshot','three')
+
+
+
+        }else if(i > 24 && i <= 32){
+
+            $(singleBtn).attr('data-screenshot','four')
+
+
+
+        }else{
+
+            $(singleBtn).attr('data-screenshot','five')
+
+        }
+
+    }
+
+
+
+    let num = 0;
+
+    for (singleBtn of allBtns) {
+
+        ++num;
+
+        if ($(singleBtn).data('screenshot') == 'one') {
+
+            getClass($(singleBtn), 8)
+
+            if (num== 8) {
+
+                takeSS(8)
+
+                $('#mockupRow').html('')
+
+            }
+
+        }
+
+        if ($(singleBtn).data('screenshot') == 'two') {
+
+            getClass($(singleBtn), 16)
+
+            if (num== 16) {
+
+                takeSS(16)
+
+                $('#mockupRow').html('')
+
+            }
+
+        }
+
+        if ($(singleBtn).data('screenshot') == 'three') {
+
+            getClass($(singleBtn), 24)
+
+            if (num== 24) {
+
+                takeSS(24)
+
+                $('#mockupRow').html('')
+
+            }
+
+        }
+
+        if ($(singleBtn).data('screenshot') == 'four') {
+
+            getClass($(singleBtn), 32)
+
+            if (num== 32) {
+
+                takeSS(32)
+
+                $('#mockupRow').html('')
+
+            }
+
+        }
+
+        if ($(singleBtn).data('screenshot') == 'five') {
+
+            getClass($(singleBtn), 36)
+
+            if (num== 36) {
+
+                takeSS(36)
+
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+    setTimeout(() => {
+
+        location.reload();
+
+    }, 5000);
+
+
+
+}
+
+
+
+
+
+function changeProfit(){
+
+    updateText('#one_text_1')
+
+}
+
+
+
+const activeAll=(e)=>{
+
+    var allNoenText = $('.commonMockupText');
+
+    for(let noenText of allNoenText){
+
+        if(e.checked == true){
+
+            $(noenText).parent().parent().attr('style','border:3px solid red');
+
+        }else{
+
+            $(noenText).parent().parent().attr('style','');
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+// let fontSize = document.querySelectorAll('.fontSizeText');
+
+// function textArea(e){
+
+//     for(let font_size of fontSize){
+
+//         font_size.innerText =e.value
+
+//     }
+
+// }
+
+
+
+function activeGrid(e,objval){
+
+    if (sizeCheckbox.checked != true) {
+
+        $("#checkWhichone").val(objval);
+
+        ($('.addBoarder')).each(function(){
+
+            $(this).removeAttr('style')
+
+        });
+
+        $(e).children().attr('style','border:3px solid red');
+
+        applyHeight();
+
+    }
+
+}
+
+
+
+
+
+
+
+function updateText(obj) {
+
+
+
+    var allgrid = $('.commonMockupText');
+
+    for (gridnum of allgrid) { // You can use `let` instead of `const` if you like
+
+
+
+        var textNeon = gridnum.classList[4];
+
+
+
+        $('.'+textNeon).html($(obj).val().replace(/\r\n|\r|\n/g, '<br>'));
+
+        var parentWidth = $('.'+textNeon).parent().parent().parent().width();
+
+        cost_calcultor($('.'+textNeon));
+
+        if(noenText){changePositionAccordingToParent(parentWidth ,  $('.'+textNeon));}
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+function setFontSize(size) {
+
+    var whichone = $("#checkWhichone").val();
+
+    $('.fontSelection_'+whichone).css("font-size", size);
+
+}
+
+
+
+function getFontSize() {
+
+
+
+    var whichone = $("#checkWhichone").val();
+
+    var currentSize = $('.fontSelection_'+whichone).css("font-size");
+
+    var currentSizeNumber = parseFloat(currentSize, 12);
+
+
+
+    return currentSizeNumber;
+
+}
+
+
+
+
+
+var widthReturn = false;
+
+var fontDataClassHeight = '';
+
+var noenText = ".commonMockupText";
+
+
+
+function increaseSize() {
+
+    var fontSize = getFontSize();
+
+    if (fontSize < 240) {
+
+        var whichone = $("#checkWhichone").val();
+
+        var noenText = '.fontSelection_'+whichone;
+
+
+
+        var newFontSize = fontSize + 8;
+
+        var objFontSize = parseInt($(noenText).attr("data-height"));
+
+        var increment = objFontSize + 1;
+
+        objFontSize = parseInt($(noenText).attr("data-height", increment));
+
+        fontDataClassHeight = $(noenText).attr('data-class');
+
+        widthReturn = cost_calcultor($(noenText));
+
+        // parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
+
+        if (widthReturn)
+
+        setFontSize(newFontSize);
+
+        //setFontSize(newFontSize);
+
+
+
+    }
+
+
+
+    if(sizeCheckbox.checked == true){
+
+        var allNoenText = $('.commonMockupText');
+
+
+
+        for(let noenText of allNoenText){
+
+            var currentSize = $(noenText).css("font-size");
+
+            var currentSizeNumber = parseFloat(currentSize, 12);
+
+            var newFontSize = currentSizeNumber + 8;
+
+            var objFontSize = parseInt($(noenText).attr("data-height"));
+
+            var increment = objFontSize + 1;
+
+            objFontSize = parseInt($(noenText).attr("data-height", increment));
+
+            fontDataClassHeight = $(noenText).attr('data-class');
+
+            widthReturn = cost_calcultor($(noenText));
+
+            // parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
+
+            if (widthReturn)
+
+            $(noenText).css("font-size", newFontSize);
+
+        }
+
+    }
+
+
+
+}
+
+
+
+let ObjMinFontSize = {
+
+    "Alexa": 7,
+
+    "Bayshore": 8,
+
+    "Dancer": 7,
+
+    "Gruenewald": 7,
+
+    "NewCursive": 7,
+
+    "Barcelony": 9,
+
+    "Vintage": 7,
+
+    "Amanda": 9,
+
+    "Budhayan": 10,
+
+    "Sebastian": 10,
+
+    "Signature": 9,
+
+    "Assalwa": 8,
+
+    "Hamilton": 12,
+
+    "Hesterica": 9,
+
+    "LoveNote": 7,
+
+    "Northwell": 10,
+
+    "Quinzey": 8,
+
+    "RedVelvet": 9,
+
+    "Rocket": 7,
+
+    "WildScript": 12,
+
+    "AvantGrade": 5,
+
+    "Bauhaus": 6,
+
+    "DOLCEVITA": 5,
+
+    "KIONA": 5,
+
+    "NixieOne": 5,
+
+    "Typewriter": 5,
+
+    "PaperDaisy": 6,
+
+    "Roboto": 6,
+
+    "BRAVE": 6,
+
+    "LOVELO": 11,
+
+    "Marquee": 11,
+
+    "NeonGlow": 11,
+
+    "NeonLite": 6,
+
+    "NEONTUBE": 8,
+
+    "Outline": 11,
+
+    "SciFi": 18,
+
+
+
+};
+
+
+
+function decreaseSize() {
+
+    var fontSize = getFontSize();
+
+    var newFontSize = fontSize - 8;
+
+    // $('.price').html((parseFloat($('.price').html()) - 10).toFixed(0))
+
+
+
+    var whichone = $("#checkWhichone").val();
+
+
+
+    widthReturn = cost_calcultor($('.fontSelection_'+whichone));
+
+
+
+    var objFontSize = parseInt($('.fontSelection_'+whichone).attr("data-height"));
+
+    var objFontName = $('.fontSelection_'+whichone).attr("data-class");
+
+    var increment = objFontSize - 1;
+
+
+
+    if (increment < ObjMinFontSize[objFontName])
+
+        return false;
+
+    fontDataClassHeight = $('.fontSelection_'+whichone).attr('data-class');
+
+    parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
+
+    widthReturn = cost_calcultor($('.fontSelection_'+whichone));
+
+    if (widthReturn)
+
+    setFontSize(newFontSize);
+
+    setFontSize(newFontSize);
+
+
+
+
+
+    if(sizeCheckbox.checked == true){
+
+        var allNoenText = $('.commonMockupText');
+
+        for(let noenText of allNoenText){
+
+            var currentSize = $(noenText).css("font-size");
+
+            var currentSizeNumber = parseFloat(currentSize, 12);
+
+            var newFontSize = currentSizeNumber - 8;
+
+            var objFontSize = parseInt($(noenText).attr("data-height"));
+
+            var increment = objFontSize - 1;
+
+            objFontSize = parseInt($(noenText).attr("data-height", increment));
+
+            fontDataClassHeight = $(noenText).attr('data-class');
+
+            widthReturn = cost_calcultor($(noenText));
+
+            // parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
+
+            if (widthReturn)
+
+            $(noenText).css("font-size", newFontSize);
+
+        }
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+let select_font = document.querySelectorAll('.font-btn');
+
+
+
+function getLineHeight() {
+
+
+
+    var lineHeight = $(noenText).css("line-height");
+
+    var lineHeightNumber = parseFloat(lineHeight, 12);
+
+    return lineHeightNumber;
+
+}
+
+
+
+function increaseLineHeight() {
+
+    var lineHeight = getLineHeight();
+
+    var newLineHeight = lineHeight + 4;
+
+    setLineHeight(newLineHeight);
+
+
+
+}
+
+
+
+function decreaseLineHeight() {
+
+    var lineHeight = getLineHeight();
+
+    var newLineHeight = lineHeight - 4;
+
+    setLineHeight(newLineHeight);
+
+}
+
+
+
+function setLineHeight(lineHeight) {
+
+    $(noenText).css("line-height", lineHeight + "px");
+
+}
+
+
+
+function cost_calcultor(nText1) {
+
+
+
+
+
+var fontRatio = { Alexa: 1.65, Bayshore: 1.65, Dancer: 1.42, Gruenewald: 1.34, NewCursive: 1.56, Barcelony: 1.9, Vintage: 1.48, Amanda: 1.34, Budhayan: 1.67, Sebastian: 1.79, Signature: 1.33, Assalwa: 1.37, Hamilton: 1.67, Hesterica: 1.59, LoveNote: 1.74, Northwell: 1.59, Quinzey: 1.73, RedVelvet: 1.53, Rocket: 1.55, WildScript: 1.29, AvantGrade: 1.32, Bauhaus: 1.32, DOLCEVITA: 1, KIONA: 1, NixieOne: 1.43, Typewriter: 1.24, PaperDaisy: 1.31, Roboto: 1.41, BRAVE: 1.63, LOVELO: 1, Marquee: 1.09, NeonGlow: 1.47, NeonLite: 0.98, NEONTUBE: 1, Outline: 1.4, SciFi: 1 };
+
+
+
+var finalHeight = nText1 != null ? (parseInt(nText1.attr("data-height"))) : 0;
+
+// var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
+
+
+
+var textOBJ = nText1;
+
+finalHeight += get_height(textOBJ);
+
+
+
+finalWidth = get_obj_width(textOBJ);
+
+
+
+
+
+
+
+var objText = $(textOBJ).html();
+
+var multiplyratio = 1;
+
+
+
+if (typeof objText !== 'undefined') {
+
+    // these statements execute
+
+
+
+    if (objText == objText.toUpperCase()) {
+
+        var checkfont = $(textOBJ).attr("data-class");
+
+        multiplyratio = fontRatio[''+checkfont+''];
+
+        if (typeof multiplyratio !== 'undefined') {
+
+            finalWidth = finalWidth * multiplyratio;
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+// if (finalWidth > 72)
+
+    // return false;
+
+sq = Math.sqrt(finalWidth * (finalHeight));
+
+if (textOBJ.attr('data-class') == 'SciFi' || textOBJ.attr('data-class') == 'Nevada' || textOBJ.attr('data-class') == 'LoveNeon' || textOBJ.attr('data-class') == 'Marquee' || textOBJ.attr('data-class') == 'NeonGlow' || textOBJ.attr('data-class') == 'Mayfair')
+
+    manufacture_cost = sq * 4.75 * 2;
+
+else
+
+    manufacture_cost = sq * 4.75 * 1;
+
+conversion = (2.54 * 2.54 * 2.54) / 5000;
+
+shipping_cost = (((finalWidth + 2) * ((finalHeight) + 2) * 4) * conversion) * 9.49 + 16.3;
+
+var getuserFactor = $("#validationDefault03").val();
+
+total_cost = (shipping_cost + manufacture_cost) * Number(getuserFactor);
+
+total_cost = total_cost.toFixed(0);
+
+var changeToTen = total_cost.toString().charAt(total_cost.toString().length - 1);
+
+total_cost = parseInt(changeToTen) >= 5 ? parseInt(total_cost) + parseInt(10 - parseInt(changeToTen)) : parseInt(total_cost) - parseInt(changeToTen);
+
+
+
+var getWhichone = $("#checkWhichone").val();
+
+$(textOBJ).parent().parent().find('.setFinalprice').html(total_cost < 140 ? `<span class="currencySpan">${selectCurrencyId.value}</span>`+140 :`<span class="currencySpan">${selectCurrencyId.value}</span>`+ Math.round(total_cost * $('#selectCurrencyId').find('option:selected').attr("dataexchange")));
+
+$(textOBJ).parent().parent().find('.setFinalprice').attr('data-currency',Math.round(total_cost * $('#selectCurrencyId').find('option:selected').attr("dataexchange")));
+
+// console.log($('#selectCurrencyId').find('option:selected').attr("dataexchange"))
+
+$(textOBJ).parent().parent().find('.setWidth').html(Math.round(finalWidth)+" inch");
+
+$(textOBJ).parent().parent().find('.setHeight').html(Math.round(finalHeight)+" inch");
+
+
+
+//$('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm);")
+
+
+
+applyHeight();
+
+return true;
+
+}
+
+
+
+function applyHeight(){
+
+    var t=0; // the height of the highest element (after the function runs)
+
+var t_elem;  // the highest element (after the function runs)
+
+
+
+
+
+$(".addBoarder").each(function () {
+
+
+
+    $this = $(this);
+
+    if ( $this.outerHeight() > t ) {
+
+        t_elem=this;
+
+        t=$this.outerHeight();
+
+    }
+
+});
+
+// $(".addBoarder").height(t);
+
+}
+
+
+
+function get_height(inputOBJ) {
+
+
+
+    fontHeight = parseInt(inputOBJ.attr("data-height"));
+
+    noOfLines = (inputOBJ.html().match(/<br>/g) || []).length > 0 ? (inputOBJ.html().match(/<br>/g) || []).length : 0;
+
+    return (fontHeight * noOfLines);
+
+}
+
+
+
+function get_obj_width(textOBJ) {
+
+    noOfLines = 1;
+
+    var textBreak = textOBJ.html().split('<br>')
+
+    var textMax = '';
+
+    for (var i = 0; i < textBreak.length; i++) {
+
+        textBreak[i] = textBreak[i].replace('&amp;','&');
+
+            textBreak[i] = textBreak[i].replace('&lt;','<');
+
+            textBreak[i] = textBreak[i].replace('&gt;','>');
+
+        if (i == 0)
+
+            textMax = textBreak[i].length;
+
+        if (textMax < textBreak[i].length)
+
+            textMax = textBreak[i].length;
+
+    }
+
+    nChar = textMax;
+
+    // aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
+
+
+
+    let aspectRatiovalue =  (textMax <= 8) ? getAspectRatio($(textOBJ).attr('data-class'),'small') : (textMax > 8 && textMax <= 18) ? getAspectRatio($(textOBJ).attr('data-class'),'medium') : (textMax > 18 ) ? getAspectRatio($(textOBJ).attr('data-class'),'large') : null;
+
+
+
+    let allActiveFonts = document.querySelectorAll('.bgBlackClWhite');
+
+    for(let singleActive of allActiveFonts){
+
+        if($(textOBJ).attr('data-class') == $(singleActive).attr('data-class')){
+
+            $(singleActive).attr('data-aspect_ratio', aspectRatiovalue)
+
+            $(textOBJ).attr('data-aspect_ratio', aspectRatiovalue)
+
+        }
+
+    }
+
+
+
+
+
+    noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
+
+
+
+    if (noOfLines > 1)
+
+        height = (parseInt(textOBJ.attr("data-height"))) * noOfLines;
+
+    else
+
+        height = parseInt(textOBJ.attr("data-height"));
+
+    finalWidth = ((height / noOfLines) / aspectRatiovalue) * nChar;
+
+    return finalWidth;
+
+}
+
+
+
+
+
+
+
+
+
+function getClass(e,mockupLength){
+
+    // for(let price of document.querySelectorAll('.setFinalprice')){
+
+    //  let newPrice =     Math.round(price.getAttribute('data-currency')*$('#selectCurrencyId').find('option:selected').attr("dataexchange"))
+
+    //      price.innerHTML=`<span class="">${selectCurrencyId.value}</span> ${newPrice}`
+
+    //  }
+
+            // Removing mockup
+
+            if($(e).hasClass('bgBlackClWhite')){
+
+
+
+                $(e).removeClass("bgBlackClWhite");
+
+                $(e).addClass("bg-f1eded")
+
+                $(e).addClass("text-dark")
+
+                $(e).addClass("commonFontBtn")
+
+
+
+                var checkWhichone = $(e).attr("fontSelection");
+
+                $("#checkWhichone").val(checkWhichone);
+
+                    $('.mockupMain_'+checkWhichone).remove();
+
+                    return false;
+
+
+
+            }
+
+            // Removing mockup
+
+
+
+
+
+            /*=================
+
+            Adding Mockup start
+
+            ==================*/
+
+            if($('.bgBlackClWhite').length  < mockupLength && !$(e).hasClass('bgBlackClWhite')){
+
+
+
+                $(e).addClass("bgBlackClWhite");
+
+                $(e).removeClass("bg-f1eded")
+
+                $(e).removeClass("text-dark")
+
+                $(e).removeClass("commonFontBtn")
+
+
+
+                var checkWhichone = $(e).attr("fontSelection");
+
+                $("#checkWhichone").val(checkWhichone);
+
+                var font_class = $(e).data("class");
+
+                $(".fontSelection_"+checkWhichone).removeClass(font_class);
+
+
+
+                var getWhichone = $("#checkWhichone").val();
+
+                $(e).attr("fontSelection",getWhichone);
+
+
+
+                $('#mockupRow').append(`
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 mb-2 pl-1 pr-1 minHeight mockupMain_${$(e).attr("fontSelection")}" onclick="activeGrid(this,'${$(e).attr("fontSelection")}')">
+
+                                <div class="bg-222222 px-2 py-1 rounded addBoarder h-100" style="border:3px solid red">
+
+                                    <div class="text-center paddingTop">
+
+                                        <span class="commonMockupText applycolor fontSizeText text-white fontSelection_${checkWhichone} ${$(e).data("class")}  ${checkWhichColor.getAttribute('data-color-active')}-text" data-color_name="${checkWhichColor.getAttribute('data-color-name')}" data-class="${$(e).data("class")}" data-mob="45" data-color="${checkWhichColor.getAttribute('data-color-active')}" data-size="${$(e).data("desk")}" data-height="${$(e).data("height")}" data-aspect_ratio="${$(e).data("aspect_ratio")}" style="font-size:${$(e).data("desk")}px; " data-width="29">${$('#one_text_1').val()}</span>
+
+                                    </div>
+
+                                     <div class="mockupDivContent">
+
+                                        <div class="d-flex relative-position align-items-end justify-content-between">
+
+                                            <div class="text-white changeFont">${$(e).data("class")}</div>
+
+                                            <div class="d-flex justify-content-end">
+
+                                                <div class="bg-white text-dark  px-2 py-0">
+
+                                                    <div class="d-flex">
+
+                                                        <div class="f-14 dimension_  _ w-47pixels whiteSpace">Width: </div>
+
+                                                        <div class="f-14 dimension_   pl-2 fw-600 setWidth whiteSpace">21 inch</div>
+
+                                                    </div>
+
+                                                    <div class="d-flex pt-0">
+
+                                                        <div class="f-14 dimension_  _ w-47pixels whiteSpace">Height: </div>
+
+                                                        <div class="f-14 dimension_   pl-2 fw-600 setHeight whiteSpace">${$(e).data("height")} inch</div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="bg-white text-dark ml-2  px-2 py-0">
+
+                                                    <div class="d-flex pt-2">
+
+                                                        <div class="f-14   w-47pixels pricrFontSize">Price: </div>
+
+                                                        <div class="f-14    pl-3 fw-600 pricrFontSize setFinalprice"><span class="currencySpan"></span>210</div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                `)
+
+
+
+
+
+                // updateText('#one_text_1')
+
+                // cost_calcultor($(noenText));
+
+
+
+                var allgrid = $('.commonMockupText');
+
+                for (gridnum of allgrid) {
+
+                    var textNeon = gridnum.classList[5];
+
+                    cost_calcultor($('.'+textNeon));
+
+                }
+
+                activeAll(sizeCheckbox)
+
+                let dataWidth = "";
+
+                dataWidth = $(e).data("width");
+
+                $('.txt_area_1').attr('maxlength', dataWidth);
+
+
+
+
+
+            }
+
+            /*===============
+
+            Adding Mockup end
+
+            ================*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getClass(e){
+
+//     // for(let selectfonts of select_font){
+
+
+
+//         if($('.bgBlackClWhite').length  >= 8){
+
+//             if($(e).hasClass('bgBlackClWhite')){
+
+//                 $(e).removeClass("bgBlackClWhite");
+
+//                 $(e).addClass("bg-f1eded")
+
+//                 $(e).addClass("text-dark")
+
+//                 var checkWhichone = $(e).attr("fontSelection");
+
+//                 $("#checkWhichone").val(checkWhichone);
+
+
+
+//                 var font_class = $(e).data("class");
+
+//                 $(".fontSelection_"+checkWhichone).removeClass(font_class);
+
+//             }
+
+//         }
+
+//         else{
+
+//             $(e).removeClass("bg-f1eded")
+
+//             $(e).removeClass("text-dark")
+
+//             $(e).addClass("bgBlackClWhite");
+
+
+
+//             var getWhichone = $("#checkWhichone").val();
+
+//             $(e).attr("fontSelection",getWhichone);
+
+
+
+//             $(".fontSelection_"+getWhichone).addClass($(e).data("class"));
+
+//             $(".fontSelection_"+getWhichone).parent().parent().find(".changeFont").text($(e).data("class"));
+
+
+
+//             var noenText = ".fontSelection_"+getWhichone;
+
+//             $(noenText).css('font-size', $(e).data("desk") + "px");
+
+//             $(noenText).attr("data-size", $(e).data("desk"));
+
+//             $(noenText).attr("data-mob", $(e).data("mob"));
+
+//             $(noenText).attr("data-class", $(e).data("class"));
+
+//             $(noenText).attr("data-height", $(e).data("height"));
+
+//             $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));
+
+
+
+//             let dataWidth = "";
+
+//             dataWidth = $(e).data("width");
+
+
+
+//             $('.txt_area_1').attr('maxlength', dataWidth);
+
+
+
+//             cost_calcultor($(noenText));
+
+
+
+//             /*$.each($(".font-div"), function() {
+
+//             let font_class = $(this).data("class");
+
+//             $(".fontSizeText").removeClass(font_class);
+
+//             });
+
+//             */
+
+
+
+//             //$(".fontSizeText").addClass($(e).data("class"));
+
+
+
+
+
+//         }
+
+
+
+
+
+
+
+
+
+
+
+//     // }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+function changeclass(e){
+
+
+
+    $tube = $(e).data("class");
+
+    $('#checkWhichColor').attr('data-color-active', $(e).data("class"))
+
+    $('#checkWhichColor').attr('data-color-name', $(e).data("name"))
+
+
+
+    $.each($(".color-selection"), function() {
+
+        let clr_class = $(this).data("class");
+
+        $(this).removeClass(clr_class + "-on");
+
+        $(this).addClass(clr_class);
+
+        $(".applycolor").removeClass(clr_class + "-text");
+
+    });
+
+    $(e).removeClass($tube);
+
+    $(e).addClass($tube + "-on");
+
+    $(".applycolor").addClass($tube + "-text");
+
+    $(".applycolor").attr("data-color", $tube);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+   <script>
+
+
+
+$(document).ready(function(){
+
+    applyHeight();
+
+});
+
+
+
+$(document).ready(function(){
+
+
+
+    $('.js-btn-tooltip').tooltip();
+
+    $('.js-btn-tooltip--custom').tooltip({
+
+        customClass: 'tooltip-custom'
+
+    });
+
+    $('.js-btn-tooltip--custom-alt').tooltip({
+
+        customClass: 'tooltip-custom-alt'
+
+    });
+
+
+
+    $('.js-btn-popover').popover();
+
+    $('.js-btn-popover--custom').popover({
+
+        customClass: 'popover-custom'
+
+    });
+
+    $('.js-btn-popover--custom-alt').popover({
+
+        customClass: 'popover-custom-alt'
+
+    });
+
+
+
+});
+
+
+
+function changePositionAccordingToParent(parentWidth,elem){
+
+    let nText1Position = elem.position();
+
+    let nText1Width = elem.width();
+
+    let nText1TotalWidth = nText1Width + nText1Position.left;
+
+    let nText1Diff = parentWidth - nText1TotalWidth;
+
+    if(nText1Diff<0){
+
+        recursiveFunction(elem);
+
+    }
+
+
+
+}
+
+function recursiveFunction(elem){
+
+    var allgrid = ["1", "2", "3","4","5","6","7","8","9","10","11", "12","13","14","15","16","17","18","19","20","21", "22","23","24","25","26","27","28","29","30","31", "32","33","34","35","36"];
+
+    for (index of allgrid) {
+
+
+
+        var parentWidth = $(".mockupMain_"+index).width()
+
+        var nText1Width = elem.width();
+
+        if(parentWidth <= nText1Width){
+
+            let textFontSize = parseInt(elem.css("font-size")) - 4;
+
+            elem.css({'font-size':textFontSize});
+
+            elem.attr('data-size',textFontSize);
+
+        }
+
+        let nText1Left = (parentWidth-elem.width());
+
+        if(nText1Left<0){nText1Left=0;}
+
+        elem.css({'left':nText1Left});
+
+
+
+        if((parentWidth-elem.width())<0){
+
+            recursiveFunction(elem);
+
+        }
+
+    }
+
+}
+
+function getAspectRatio(currentClass,currentSize){
+
+
+
+let aspect_Ratios = {
+
+        Alexa: {
+
+            small:'2.11',
+
+            medium:'2.59',
+
+            large:'2.76',
+
+        },
+
+        Bayshore: {
+
+            small:'2.99',
+
+            medium:'3.28',
+
+            large:'4.18',
+
+        },
+
+        Dancer: {
+
+            small:'2.23',
+
+            medium:'2.69',
+
+            large:'3.05',
+
+        },
+
+        Gruenewald: {
+
+            small:'2.00',
+
+            medium:'2.68',
+
+            large:'2.85',
+
+        },
+
+        NewCursive: {
+
+            small:'2.35',
+
+            medium:'2.82',
+
+            large:'3.11',
+
+        },
+
+        Barcelony: {
+
+            small:'2.90',
+
+            medium:'4.13',
+
+            large:'3.77',
+
+        },
+
+        Vintage: {
+
+            small:'2.60',
+
+            medium:'2.95',
+
+            large:'3.16',
+
+        },
+
+        Amanda: {
+
+            small:'2.79',
+
+            medium:'3.10',
+
+            large:'3.88',
+
+        },
+
+        Budhayan: {
+
+            small:'2.79',
+
+            medium:'3.38',
+
+            large:'3.75',
+
+        },
+
+        Sebastian: {
+
+            small:'2.84',
+
+            medium:'3.32',
+
+            large:'4.55',
+
+        },
+
+        Signature: {
+
+            small:'2.43 ',
+
+            medium:'2.84 ',
+
+            large:'3.74 ',
+
+        },
+
+        Assalwa: {
+
+            small:'3.11 ',
+
+            medium:'3.20 ',
+
+            large:'3.87 ',
+
+        },
+
+        Hamilton: {
+
+            small:'3.43 ',
+
+            medium:'4.53 ',
+
+            large:'4.47 ',
+
+        },
+
+        Hesterica: {
+
+            small:'3.09 ',
+
+            medium:'4.26 ',
+
+            large:'4.23 ',
+
+        },
+
+        LoveNote: {
+
+            small:'2.33 ',
+
+            medium:'2.71 ',
+
+            large:'2.75 ',
+
+        },
+
+        Northwell: {
+
+            small:'3.77 ',
+
+            medium:'4.18 ',
+
+            large:'5.04 ',
+
+        },
+
+        Quinzey: {
+
+            small:'2.52 ',
+
+            medium:'2.77 ',
+
+            large:'3.52 ',
+
+        },
+
+        RedVelvet: {
+
+            small:'2.00 ',
+
+            medium:'2.98 ',
+
+            large:'3.78 ',
+
+        },
+
+        Rocket: {
+
+            small:'2.15 ',
+
+            medium:'2.67 ',
+
+            large:'2.74 ',
+
+        },
+
+        WildScript: {
+
+            small:'3.81 ',
+
+            medium:'4.47 ',
+
+            large:'5.58 ',
+
+        },
+
+        AvantGrade: {
+
+            small:'1.88 ',
+
+            medium:'2.52 ',
+
+            large:'2.36 ',
+
+        },
+
+        Bauhaus: {
+
+            small:'1.77 ',
+
+            medium:'2.32 ',
+
+            large:'2.17 ',
+
+        },
+
+        DOLCEVITA: {
+
+            small:'2.15 ',
+
+            medium:'2.09 ',
+
+            large:'2.09 ',
+
+        },
+
+        KIONA: {
+
+            small:'1.96 ',
+
+            medium:'1.58 ',
+
+            large:'1.91 ',
+
+        },
+
+        NixieOne: {
+
+            small:'1.96 ',
+
+            medium:'2.16 ',
+
+            large:'2.09 ',
+
+        },
+
+        Typewriter: {
+
+            small:'1.77 ',
+
+            medium:'2.09 ',
+
+            large:'2.16 ',
+
+        },
+
+        PaperDaisy: {
+
+            small:'3.97 ',
+
+            medium:'3.75 ',
+
+            large:'4.75 ',
+
+        },
+
+        Roboto: {
+
+            small:'2.12 ',
+
+            medium:'2.46 ',
+
+            large:'2.44 ',
+
+        },
+
+        BRAVE: {
+
+            small:'2.35 ',
+
+            medium:'2.54 ',
+
+            large:'2.66 ',
+
+        },
+
+        LOVELO: {
+
+            small:'1.56 ',
+
+            medium:'1.54 ',
+
+            large:'1.59 ',
+
+        },
+
+        Marquee: {
+
+            small:'2.66 ',
+
+            medium:'2.86 ',
+
+            large:'2.82 ',
+
+        },
+
+        NeonGlow: {
+
+            small:'2.18 ',
+
+            medium:'2.62 ',
+
+            large:'2.60 ',
+
+        },
+
+        NeonLite: {
+
+            small:'1.95 ',
+
+            medium:'1.71 ',
+
+            large:'1.96 ',
+
+        },
+
+        NEONTUBE: {
+
+            small:'1.65 ',
+
+            medium:'1.81 ',
+
+            large:'1.64 ',
+
+        },
+
+        Outline: {
+
+            small:'1.84 ',
+
+            medium:'2.09 ',
+
+            large:'2.24 ',
+
+        },
+
+        SciFi: {
+
+            small:'1.37 ',
+
+            medium:'1.45 ',
+
+            large:'1.40 ',
+
+        },
+
+
+
+}
+
+
+
+// console.log(currentClass);
+
+return aspect_Ratios[currentClass][currentSize]
+
+
+
+}
+
+const selectCurrency = (e) => {
+
+    $('.currencySpan').text(e.value)
+
+     for(let price of document.querySelectorAll('.setFinalprice')){
+
+         let newPrice =     Math.round(price.getAttribute('data-currency')*$('#selectCurrencyId').find('option:selected').attr("dataexchange"))
+
+         price.innerHTML=`<span class="">${e.value}</span> ${newPrice}`
+
+     }
+
+}
+
+   </script>
+
+
+
+</body>
+
+
+
+</html>
